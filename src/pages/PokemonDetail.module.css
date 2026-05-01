@@ -1,0 +1,359 @@
+.detailPage {
+  min-height: calc(100vh - 80px);
+  padding-top: 100px;
+  padding-bottom: var(--spacing-2xl);
+}
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--text-secondary);
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  border: none;
+}
+
+.backButton:hover {
+  color: var(--accent-primary);
+  transform: translateX(-4px);
+}
+
+.detailHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.detailId {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.detailName {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+  text-transform: capitalize;
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-electric) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.detailTypes {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.typeBadge {
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--bg-primary);
+  letter-spacing: 1px;
+}
+
+.detailContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.imageSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.spriteContainer {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1;
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemonSprite {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  image-rendering: pixelated;
+  transition: transform var(--transition-normal);
+}
+
+.pokemonSprite:hover {
+  transform: scale(1.1);
+}
+
+.shinyToggle {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  cursor: pointer;
+}
+
+.shinyToggle input {
+  display: none;
+}
+
+.shinyToggleLabel {
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.shinyToggle input:checked + .shinyToggleLabel {
+  color: var(--accent-primary);
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.infoCard {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+}
+
+.infoTitle {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--accent-primary);
+}
+
+.statsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.statRow {
+  display: grid;
+  grid-template-columns: 100px 1fr 40px;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.statName {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.statBarContainer {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.statBar {
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width 0.5s ease-out;
+}
+
+.statValue {
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.physicalStats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+}
+
+.physicalStat {
+  text-align: center;
+}
+
+.physicalStatLabel {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: var(--spacing-xs);
+}
+
+.physicalStatValue {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.abilitiesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.abilityBadge {
+  padding: var(--spacing-xs) var(--spacing-md);
+  background: rgba(247, 213, 43, 0.1);
+  border: 1px solid var(--accent-primary);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  text-transform: capitalize;
+}
+
+.evolutionSection {
+  grid-column: 1 / -1;
+}
+
+.evolutionChain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+}
+
+.evolveStage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  text-decoration: none;
+  transition: transform var(--transition-fast);
+}
+
+.evolveStage:hover {
+  transform: scale(1.1);
+}
+
+.evolveImage {
+  width: 96px;
+  height: 96px;
+  image-rendering: pixelated;
+}
+
+.evolveName {
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  color: var(--text-primary);
+}
+
+.evolveArrow {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.movesSection {
+  grid-column: 1 / -1;
+}
+
+.movesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: var(--spacing-sm);
+}
+
+.moveCard {
+  background: var(--bg-secondary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+}
+
+.errorContainer {
+  text-align: center;
+  padding: var(--spacing-2xl);
+}
+
+.errorTitle {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--text-primary);
+}
+
+.errorText {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Type colors for stat bars */
+.stat-bar-normal { background: #a8a878; }
+.stat-bar-fire { background: #f08030; }
+.stat-bar-water { background: #6890f0; }
+.stat-bar-electric { background: #f8d030; }
+.stat-bar-grass { background: #78c850; }
+.stat-bar-ice { background: #98d8d8; }
+.stat-bar-fighting { background: #c03028; }
+.stat-bar-poison { background: #a040a0; }
+.stat-bar-ground { background: #e0c068; }
+.stat-bar-flying { background: #a890f0; }
+.stat-bar-psychic { background: #f85888; }
+.stat-bar-bug { background: #a8b820; }
+.stat-bar-rock { background: #b8a038; }
+.stat-bar-ghost { background: #705898; }
+.stat-bar-dragon { background: #7038f8; }
+.stat-bar-dark { background: #49291a; }
+.stat-bar-steel { background: #b8b8d0; }
+.stat-bar-fairy { background: #ee99ac; }
+
+@media (max-width: 768px) {
+  .detailContent {
+    grid-template-columns: 1fr;
+  }
+  
+  .detailName {
+    font-size: 2rem;
+  }
+  
+  .spriteContainer {
+    max-width: 250px;
+  }
+  
+  .statsGrid {
+    gap: var(--spacing-xs);
+  }
+  
+  .statRow {
+    grid-template-columns: 80px 1fr 30px;
+  }
+}
