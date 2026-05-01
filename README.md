@@ -149,20 +149,56 @@ npm run preview
 
 ## 📱 Screenshots
 
-### Home Page
-A página inicial apresenta um design Hero com a Pokébola clássica, efeito de digitação "Gotta Catch 'Em All!" e botões de navegação.
+A aplicação usa dados reais da **PokéAPI** (https://pokeapi.co). Veja alguns exemplos dos Pokémon disponíveis:
 
-![Home Page](https://via.placeholder.com/800x400?text=Home+Page+-+Hero+Section)
+### 🌟 Home Page - Pokémon em Destaque
+A página inicial apresenta um design Hero com a Pokébola clássica, efeito de digitação "Gotta Catch 'Em All!" e 8 Pokémon em destaque da primeira geração:
 
-### Pokedex Page
-Lista paginada de Pokémon com卡片 (cards) contendo imagem, nome e número na Pokédex.
+| Pokémon |Imagem | # |
+|---------|-------|---|
+| Bulbasaur | ![Bulbasaur](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png) | #001 |
+| Charmander | ![Charmander](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png) | #004 |
+| Squirtle | ![Squirtle](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png) | #007 |
+| Pikachu | ![Pikachu](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png) | #025 |
+| Jigglypuff | ![Jigglypuff](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png) | #039 |
+| Meowth | ![Meowth](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/52.png) | #052 |
+| Gengar | ![Gengar](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png) | #094 |
+| Eevee | ![Eevee](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png) | #133 |
 
-![Pokedex](https://via.placeholder.com/800x400?text=Pokedex+Page+-+Pokemon+Grid)
+**Acesse a aplicação:** https://folkss1.github.io/pokedex/
 
-### Pokemon Detail
-Página detalhada com informações completas do Pokémon selecionado.
+---
 
-![Pokemon Detail](https://via.placeholder.com/800x400?text=Pokemon+Detail+Page)
+### 📖 Pokedex Page - Lista de Pokémon
+A página da Pokédex exibe todos os 151 Pokémon da geração Kanto em umgrid responsivo. Cada card mostra:
+- Imagem oficial do Pokémon
+- Nome capitalizado
+- Número na Pokédex (#001 - #151)
+
+**Ver todos os Pokémon:** https://folkss1.github.io/pokedex/pokedex
+
+---
+
+### 🔍 Busca por Nome
+Na página da Pokédex, você pode buscar qualquer Pokémon pelo nome:
+- Digite "pikachu" → Encontra Pikachu (#025)
+- Digite "charizard" → Encontra Charizard (#006)
+
+**Teste a busca:** https://folkss1.github.io/pokedex/pokedex?search=pikachu
+
+---
+
+### 📊 Pokemon Detail - Detalhes Completos
+Ao clicar em um Pokémon, você vê informações completas:
+
+| Informação | Descrição |
+|------------|-----------|
+| **Tipos** | fire, flying, etc. |
+| **Stats** | hp, attack, defense, speed |
+| **Habilidades** | blaze, solar-power |
+| **Sprites** | Front/Back/default/shiny |
+
+**Exemplo - Pikachu:** https://folkss1.github.io/pokedex/pokemon/25
 
 ---
 
